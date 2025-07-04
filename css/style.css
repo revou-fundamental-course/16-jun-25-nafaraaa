@@ -1,0 +1,180 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4800ff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+nav .logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Section base styling */
+section {
+  min-height: 20vh;
+  padding: 70px 20px; /* ✅ FIXED typo: was 70x */
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Hero section */
+.hero {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+/* Section titles */
+section h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+
+/* Message section */
+#message form {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.result {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #f9f9f9;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #0800ff;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+/* Our Profile Page */
+#our-profile {
+  padding: 50px;
+}
+
+.profile-banner {
+  height: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.profile-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-project {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.project-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.project-card p,
+.project-card ul {
+  color: #444;
+}
+
+.project-card ul {
+  margin: 10px 0 20px 20px;
+}
+
+.card-style {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .vision-mission {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+}

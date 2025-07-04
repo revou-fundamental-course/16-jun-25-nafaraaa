@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="logo">
+  <img src="/16-jun-25-nafaraaa/image/logo.png" alt="TechComp Logo" class="logo-img" />
+</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Our Profile</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="message-us.html">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+       <section id="message">
+        <h3>Message Us</h3>
+        <form id="contact-form">
+          <label>Name:</label>
+          <input type="text" id="name" />
+
+          <label>Birth Date:</label>
+          <input type="date" id="dob" />
+
+          <label>Gender:</label>
+          <div>
+            <input type="radio" name="gender" value="Laki-Laki" checked /> Male
+            <input type="radio" name="gender" value="Perempuan" /> Female
+          </div>
+
+          <label>Message:</label>
+          <textarea id="message-box"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="result">
+          <p><strong>Current time:</strong> <span id="time"></span></p>
+          <p><strong>Name:</strong> <span id="result-name"></span></p>
+          <p><strong>Birth Date:</strong> <span id="result-dob"></span></p>
+          <p><strong>Gender:</strong> <span id="result-gender"></span></p>
+          <p><strong>Message:</strong> <span id="result-message"></span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; TechComp. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
